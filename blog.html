@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mokshala Piyumika |Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <!--Get icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="portfolio.js"></script>
+
+  <!--only blog image css-->
+  <style>
+    .card-body #blog-img{
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container d-flex justify-content-between align-items-left">
+      <h1 class="logo">Mokshala Piyumika</h1>
+      <nav>
+        <ul class="d-flex list-unstyled mb-0 flex-wrap">
+         <li class="mx-2"><a href="index.html">Home</a></li>
+          <li class="mx-2"><a href="blog.html">Blog</a></li>
+          <li class="mx-2"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+<section class="portfolio" id="blogs">
+  <div class="container">
+    <h2 class="text-center mb-5">Read My <span class="highlight">Blog Article</span></h2>
+
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card project-card h-100 shadow-sm">
+          <div class="card-body">
+            <a href="https://mokshapiyu00.medium.com/the-art-and-magic-of-animation-bringing-still-images-to-life-f8d09ba17431"  target="_blank">
+            <img id="blog-img" src="animation.png" alt="animation"> </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 mb-4">
+        <div class="card project-card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="card-title text-info">Animation Article </h3>
+            <h5 class="card-text">The Art and Magic of Animation: Bringing Still Images to Life.</h5>
+            <i class="fab fa-medium"></i>
+            <a href="https://mokshapiyu00.medium.com/the-art-and-magic-of-animation-bringing-still-images-to-life-f8d09ba17431"  target="_blank" class="text-light d-block">Read My blog</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="text-center py-4 bg-dark">
+  <div class="container">
+    <p class="mb-0 text-muted">&copy; 2025 Mokshala Piyumika. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

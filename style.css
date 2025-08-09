@@ -1,0 +1,249 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0b0c10;
+  color: #c5c6c7;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #1f2833;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 255, 255, 0.05);
+}
+
+/*navigation*/
+.logo {
+  font-size: 26px;
+  font-weight: 600;
+  color: #66fcf1;
+}
+
+nav ul li a {
+  position: relative;
+  color: #c5c6c7;
+  font-weight: 500;
+  padding: 5px 2px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #66fcf1;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+  width: 100%;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #66fcf1;
+}
+
+/*home*/
+.hero {
+  padding: 100px 0;
+  background: linear-gradient(145deg, #0b0c10, #1f2833);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero .text {
+  flex: 1 1 50%;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.hero .image {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.hero img {
+  border-radius: 50%;
+  border: 4px solid #66fcf1;
+  box-shadow: 0 0 30px #66fcf166;
+  max-width: 300px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px #66fcf1aa;
+}
+
+.btn {
+  background: #66fcf1;
+  color: #0b0c10;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #45a29e;
+  transform: translateY(-3px);
+}
+
+.social-icons a {
+  color: #66fcf1;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: transform 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+section {
+  padding: 80px 0;
+}
+
+.about, .services, .portfolio, .contact {
+  background: #1f2833;
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about .image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.about img {
+  max-width: 250px;
+  border: 3px solid #66fcf1;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #66fcf155;
+}
+
+.about .text {
+  flex: 1 1 55%;
+  padding-left: 20px;
+  
+}
+
+.about h2, .services h2, .portfolio h2, .contact h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #66fcf1;
+}
+
+/*skills*/
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.card {
+  background: #0b0c10;
+  padding: 30px 20px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  box-shadow: 0 0 0 transparent;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #66fcf144;
+}
+
+.card i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #66fcf1;
+}
+
+/*certificate*/
+.certificate-card {
+  background: #0b0c10;
+  color: #c5c6c7;
+  border-left: 4px solid #66fcf1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.certificate-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px #66fcf133;
+}
+
+.certificate-card .card-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.certificate-card .btn-sm {
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.certificate-card .btn-sm i {
+  font-size: 0.75rem;
+}
+
+/*contact*/
+.contact-card {
+  background: #1f2833;
+  border-left: 4px solid #66fcf1;
+  border-radius: 10px;
+  color: #c5c6c7;
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: #c5c6c7;
+  transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+  color: #66fcf1;
+}
+
+/*footer*/
+footer {
+  background: #0b0c10;
+  color: #888;
+}
+
+footer {
+  background: #0b0c10;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #c5c6c7;
+}
+
+
